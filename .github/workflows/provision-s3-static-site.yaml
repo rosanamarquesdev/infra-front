@@ -49,5 +49,3 @@ jobs:
           REPO: ${{ github.repository }}
           BODY: >
             O bucket S3 foi criado com sucesso! 🎉
-
-
