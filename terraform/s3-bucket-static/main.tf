@@ -9,7 +9,7 @@ variable "bucket_name" {
 resource "aws_s3_bucket" "static_site_bucket" {
   bucket = "static-site-${var.bucket_name}"
 
-  object_lock_enabled = false 
+  object_lock_enabled = false # Desativa o lock para evitar chamadas automáticas de leitura
   tags = {
     Name        = "Static Site Bucket"
     Environment = "Production"
